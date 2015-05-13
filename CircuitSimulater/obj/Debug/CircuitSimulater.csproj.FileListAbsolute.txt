@@ -1,0 +1,8 @@
+c:\users\jeroen\documents\visual studio 2012\Projects\CircuitSimulater\CircuitSimulater\bin\Debug\CircuitSimulater.exe.config
+c:\users\jeroen\documents\visual studio 2012\Projects\CircuitSimulater\CircuitSimulater\obj\Debug\CircuitSimulater.csprojResolveAssemblyReference.cache
+c:\users\jeroen\documents\visual studio 2012\Projects\CircuitSimulater\CircuitSimulater\obj\Debug\CircuitSimulater.Properties.Resources.resources
+c:\users\jeroen\documents\visual studio 2012\Projects\CircuitSimulater\CircuitSimulater\obj\Debug\CircuitSimulater.csproj.GenerateResource.Cache
+c:\users\jeroen\documents\visual studio 2012\Projects\CircuitSimulater\CircuitSimulater\bin\Debug\CircuitSimulater.exe
+c:\users\jeroen\documents\visual studio 2012\Projects\CircuitSimulater\CircuitSimulater\bin\Debug\CircuitSimulater.pdb
+c:\users\jeroen\documents\visual studio 2012\Projects\CircuitSimulater\CircuitSimulater\obj\Debug\CircuitSimulater.exe
+c:\users\jeroen\documents\visual studio 2012\Projects\CircuitSimulater\CircuitSimulater\obj\Debug\CircuitSimulater.pdb
