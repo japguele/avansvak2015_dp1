@@ -8,6 +8,10 @@ namespace CircuitSimulater.Model
 {
     class Or : TwoInputNode
     {
+        public static void Register()
+        {
+            CircuitFactory.Register("OR", typeof(Or));
+        }
         public override void SendInput(Boolean input)
         {
             if (this.input == null)

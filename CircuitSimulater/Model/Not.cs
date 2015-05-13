@@ -8,6 +8,10 @@ namespace CircuitSimulater.Model
 {
     class Not : BasicNode
     {
+        public static void Register()
+        {
+            CircuitFactory.Register("NOT", typeof(Not));
+        }
         public void SendInput(Boolean input)
         {
             if (input)

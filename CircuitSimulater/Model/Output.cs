@@ -8,13 +8,17 @@ namespace CircuitSimulater.Model
 {
     class Output : BasicNodeInterface
     {
+        public static void Register()
+        {
+            CircuitFactory.Register("OUTPUT", typeof(Output));
+        }
         private String name;
 
-        public String getName()
+        public String GetName()
         {
             return this.name;
         }
-        public void setName(String name)
+        public void SetName(String name)
         {
             this.name = name;
         }

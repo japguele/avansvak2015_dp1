@@ -8,6 +8,10 @@ namespace CircuitSimulater.Model
 {
     class And : TwoInputNode 
     {
+        public static void Register()
+        {
+            CircuitFactory.Register("AND", typeof(And));
+        }
         public override void SendInput(Boolean input)
         {
             if (this.input == null)
@@ -22,6 +26,7 @@ namespace CircuitSimulater.Model
                 }
                 else
                 {
+                   
                     this.SendValueToNext(false);
                 }
 
