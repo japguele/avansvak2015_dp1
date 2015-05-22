@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace CircuitSimulater.Model
 {
-    interface BasicNodeInterface
+    public abstract class AbstractNode
     {
-   
-        
-        void SendInput(Boolean input);
+        public abstract void SendValueToNext(Boolean input);
     }
 }

@@ -23,10 +23,11 @@ namespace CircuitSimulater
             Or.Register();
             Output.Register();
 
-            Output output = (Output)CircuitFactory.CreateNode("OUTPUT");
-            Input a = (Input)CircuitFactory.CreateNode("INPUT");
-            Input b = (Input)CircuitFactory.CreateNode("INPUT");
-            And and = (And)CircuitFactory.CreateNode("AND");
+
+            BasicNode output = CircuitFactory.CreateNode("OUTPUT");
+            BasicNode a = CircuitFactory.CreateNode("INPUT");
+            BasicNode b = CircuitFactory.CreateNode("INPUT");
+            BasicNode and = CircuitFactory.CreateNode("AND");
 
 
 
@@ -35,10 +36,9 @@ namespace CircuitSimulater
 
             and.AddNext(output);
 
-            a.SetInput(true);
-            b.SetInput(true);
-            a.SendInput();
-            b.SendInput();
+
+            a.SendValueToNext(true);
+            b.SendValueToNext(true);
             Console.WriteLine("test");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

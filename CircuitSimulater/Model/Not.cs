@@ -12,18 +12,12 @@ namespace CircuitSimulater.Model
         {
             CircuitFactory.Register("NOT", typeof(Not));
         }
-        public void SendInput(Boolean input)
+        public override void SendValueToNext(Boolean input)
         {
-            if (input)
+            foreach (BasicNode node in Next)
             {
-                input = false;
-            }
-            else
-            {
-                input = true;
-            }
-         this.SendValueToNext(false);
-
+                node.SendValueToNext(!input);
+            }           
         }
     }
 }

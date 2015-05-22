@@ -15,12 +15,12 @@ namespace CircuitSimulater.Model
         {
             circuits.Add(key, c);
         }
-        public static BasicNodeInterface CreateNode(String key)
+        public static BasicNode CreateNode(String key)
         {
             Type type = null;
             if (circuits.TryGetValue(key, out type))
             {
-                return (BasicNodeInterface)Activator.CreateInstance(type, null);
+                return (BasicNode)Activator.CreateInstance(type, null);
             }
 
             return null;

@@ -12,7 +12,7 @@ namespace CircuitSimulater.Model
         {
             CircuitFactory.Register("OR", typeof(Or));
         }
-        public override void SendInput(Boolean input)
+        public override void SendValueToNext(Boolean input)
         {
             if (this.input == null)
             {
@@ -20,18 +20,14 @@ namespace CircuitSimulater.Model
             }
             else
             {
-                if (this.input == false && input == false)
+                if (this.input == true || input )
                 {
-                    this.SendValueToNext(false);
+                    foreach (BasicNode node in Next)
+                    {
+                        node.SendValueToNext(input);
+                    }
                 }
-                else
-                {
-                    this.SendValueToNext(true);
-                }
-
-
             }
-
         }
     }
 }

@@ -6,29 +6,22 @@ using System.Threading.Tasks;
 
 namespace CircuitSimulater.Model
 {
-    class BasicNode : BasicNodeInterface
+    class BasicNode : AbstractNode
     {
        
         private String name;
-        private List<BasicNodeInterface> Next = new List<BasicNodeInterface>();
-     
-        public void AddNext(BasicNodeInterface Next)
+        protected List<BasicNode> Next = new List<BasicNode>();
+
+        public void AddNext(BasicNode Next)
         {
             this.Next.Add(Next);
         }
 
-        protected void SendValueToNext(Boolean output)
+        public override void SendValueToNext(Boolean input)
         {
-            foreach (BasicNodeInterface node in Next)
-            {
-                node.SendInput(output);
-            }
-           
         }
 
-        public virtual void SendInput(Boolean input)
-        {
-        }
+      
         public void SetName(String name)
         {
             this.name = name;

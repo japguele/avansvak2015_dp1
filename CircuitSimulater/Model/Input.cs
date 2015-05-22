@@ -12,31 +12,12 @@ namespace CircuitSimulater.Model
         {
             CircuitFactory.Register("INPUT", typeof(Input));
         }
-        private String name;
-
-        public String GetName()
+        public override void SendValueToNext(Boolean input)
         {
-            return this.name;
-        }
-        public void SetName(String name)
-        {
-            this.name = name;
-        }
-        public void SetInput(Boolean startValue)
-        {
-            this.input = startValue;
-        }
-        public void SendInput()
-        {
-            if (this.input == true)
+            foreach (BasicNode node in Next)
             {
-                this.SendValueToNext(true);
-            }
-            else
-            {            
-                this.SendValueToNext(false);
+              node.SendValueToNext(input);
             }
         }
-
     }
 }

@@ -12,28 +12,29 @@ namespace CircuitSimulater.Model
         {
             CircuitFactory.Register("AND", typeof(And));
         }
-        public override void SendInput(Boolean input)
+        public override void SendValueToNext(Boolean input)
         {
             if (this.input == null)
             {
-                   this.input = input;
+                this.input = input;
             }
             else
             {
-                if (this.input == true && input == true)
+                Boolean result = false;
+                if (this.input == true && input)
                 {
-                    this.SendValueToNext(true);
+                    result = true;
                 }
-                else
+                foreach (BasicNode node in Next)
                 {
-                   
-                    this.SendValueToNext(false);
-                }
-
-
+                    node.SendValueToNext(result);
+                }              
             }
-          
+         
+
         }
+
+     
       
        
 

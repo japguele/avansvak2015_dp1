@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CircuitSimulater.Model
 {
-    class Output : BasicNodeInterface
+    class Output : BasicNode
     {
         public static void Register()
         {
@@ -18,17 +18,11 @@ namespace CircuitSimulater.Model
         {
             return this.name;
         }
-        public void SetName(String name)
+
+        public override void SendValueToNext(Boolean input)
         {
-            this.name = name;
+          Console.WriteLine(input);
         }
-        public void SendInput(Boolean input)
-        {
-            int value =0;
-            if(input){
-                value = 1;
-            }
-            Console.WriteLine(value);
-        }
+      
     }
 }
