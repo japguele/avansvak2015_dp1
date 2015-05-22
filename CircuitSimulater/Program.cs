@@ -23,17 +23,13 @@ namespace CircuitSimulater
             Or.Register();
             Output.Register();
 
-
             BasicNode output = CircuitFactory.CreateNode("OUTPUT");
             BasicNode a = CircuitFactory.CreateNode("INPUT");
             BasicNode b = CircuitFactory.CreateNode("INPUT");
             BasicNode and = CircuitFactory.CreateNode("AND");
 
-
-
             a.AddNext(and);
             b.AddNext(and);
-
             and.AddNext(output);
 
 
