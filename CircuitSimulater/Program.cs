@@ -28,13 +28,13 @@ namespace CircuitSimulater
             BasicNode b = CircuitFactory.CreateNode("INPUT");
             BasicNode and = CircuitFactory.CreateNode("AND");
 
-            a.AddNext(and);
-            b.AddNext(and);
-            and.AddNext(output);
+            a.AddNext(and); // zet de next node die de waarde van de uitkomst van deze node moet krijgen
+            b.AddNext(and); // zet de next node die de waarde van de uitkomst van deze node moet krijgen
+            and.AddNext(output); // zet de next node die de waarde van de uitkomst van deze node moet krijgen
 
 
-            a.SendValueToNext(true);
-            b.SendValueToNext(true);
+            a.SendValueToNext(true);//dit bij de inputs
+            b.SendValueToNext(true);//dit bij de inputs
             Console.WriteLine("test");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
