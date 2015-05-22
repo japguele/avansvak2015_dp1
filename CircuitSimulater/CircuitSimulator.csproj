@@ -54,6 +54,7 @@
     <Compile Include="Model\And.cs" />
     <Compile Include="Model\BasicNode.cs" />
     <Compile Include="Model\BasicNodeInterface.cs" />
+    <Compile Include="Model\CircuitFactory.cs" />
     <Compile Include="Model\Input.cs" />
     <Compile Include="Model\Not.cs" />
     <Compile Include="Model\Or.cs" />

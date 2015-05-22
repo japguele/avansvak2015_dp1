@@ -8,17 +8,21 @@ namespace CircuitSimulater.Model
 {
     class Input : TwoInputNode
     {
+        public static void Register()
+        {
+            CircuitFactory.Register("INPUT", typeof(Input));
+        }
         private String name;
 
-        public String getName()
+        public String GetName()
         {
             return this.name;
         }
-        public void setName(String name)
+        public void SetName(String name)
         {
             this.name = name;
         }
-        public void setInput(Boolean startValue)
+        public void SetInput(Boolean startValue)
         {
             this.input = startValue;
         }

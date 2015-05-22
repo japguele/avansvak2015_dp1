@@ -8,6 +8,7 @@ namespace CircuitSimulater.Model
 {
     interface BasicNodeInterface
     {
+   
         
         void SendInput(Boolean input);
     }

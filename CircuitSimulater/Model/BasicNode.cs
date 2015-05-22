@@ -8,6 +8,7 @@ namespace CircuitSimulater.Model
 {
     class BasicNode : BasicNodeInterface
     {
+       
         private String name;
         private List<BasicNodeInterface> Next = new List<BasicNodeInterface>();
      
@@ -28,10 +29,11 @@ namespace CircuitSimulater.Model
         public virtual void SendInput(Boolean input)
         {
         }
-        public void setName(String name)
+        public void SetName(String name)
         {
             this.name = name;
         }
+     
 
         
     }

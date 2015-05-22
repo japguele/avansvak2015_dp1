@@ -17,18 +17,26 @@ namespace CircuitSimulater
         [STAThread]
         static void Main()
         {
-            Output output = new Output();
-            Input a = new Input();
-            Input b = new Input();  
-            And and = new And();
+            And.Register();
+            Input.Register();
+            Not.Register();
+            Or.Register();
+            Output.Register();
+
+            Output output = (Output)CircuitFactory.CreateNode("OUTPUT");
+            Input a = (Input)CircuitFactory.CreateNode("INPUT");
+            Input b = (Input)CircuitFactory.CreateNode("INPUT");
+            And and = (And)CircuitFactory.CreateNode("AND");
+
+
 
             a.AddNext(and);
             b.AddNext(and);
 
             and.AddNext(output);
 
-            a.setInput(true);
-            b.setInput(true);
+            a.SetInput(true);
+            b.SetInput(true);
             a.SendInput();
             b.SendInput();
             Console.WriteLine("test");
