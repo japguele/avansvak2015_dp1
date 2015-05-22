@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircuitSimulater", "CircuitSimulater\CircuitSimulater.csproj", "{A7B775F0-3AFB-4B90-A177-521F24ECD220}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircuitSimulator", "CircuitSimulater\CircuitSimulator.csproj", "{A7B775F0-3AFB-4B90-A177-521F24ECD220}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

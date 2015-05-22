@@ -1,0 +1,9 @@
+E:\School\EveryWhere\DP1\avansvak2015_dp1\CircuitSimulater\bin\Release\CircuitSimulater.exe.config
+E:\School\EveryWhere\DP1\avansvak2015_dp1\CircuitSimulater\bin\Release\CircuitSimulater.exe
+E:\School\EveryWhere\DP1\avansvak2015_dp1\CircuitSimulater\bin\Release\CircuitSimulater.pdb
+E:\School\EveryWhere\DP1\avansvak2015_dp1\CircuitSimulater\obj\Release\CircuitSimulator.csprojResolveAssemblyReference.cache
+E:\School\EveryWhere\DP1\avansvak2015_dp1\CircuitSimulater\obj\Release\CircuitSimulater.MainWindow.resources
+E:\School\EveryWhere\DP1\avansvak2015_dp1\CircuitSimulater\obj\Release\CircuitSimulater.Properties.Resources.resources
+E:\School\EveryWhere\DP1\avansvak2015_dp1\CircuitSimulater\obj\Release\CircuitSimulator.csproj.GenerateResource.Cache
+E:\School\EveryWhere\DP1\avansvak2015_dp1\CircuitSimulater\obj\Release\CircuitSimulater.exe
+E:\School\EveryWhere\DP1\avansvak2015_dp1\CircuitSimulater\obj\Release\CircuitSimulater.pdb
