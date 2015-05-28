@@ -12,6 +12,7 @@ namespace CircuitSimulater.Model
         {
             CircuitFactory.Register("OR", typeof(Or));
         }
+
         public override void SendValueToNext(Boolean input)
         {
             if (this.input == null)

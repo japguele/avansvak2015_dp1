@@ -9,9 +9,5 @@ namespace CircuitSimulater.Model
     class TwoInputNode : BasicNode
     {
         protected Boolean? input;
-        
-        
-   
-
     }
 }

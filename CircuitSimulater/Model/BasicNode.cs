@@ -8,8 +8,7 @@ namespace CircuitSimulater.Model
 {
     class BasicNode : AbstractNode
     {
-       
-        private String name;
+        public string name { get; set; }
         protected List<BasicNode> Next = new List<BasicNode>();
 
         public void AddNext(BasicNode Next)
@@ -19,15 +18,6 @@ namespace CircuitSimulater.Model
 
         public override void SendValueToNext(Boolean input)
         {
-        }
-
-      
-        public void SetName(String name)
-        {
-            this.name = name;
-        }
-     
-
-        
+        }      
     }
 }

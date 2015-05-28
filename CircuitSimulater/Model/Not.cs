@@ -12,6 +12,7 @@ namespace CircuitSimulater.Model
         {
             CircuitFactory.Register("NOT", typeof(Not));
         }
+
         public override void SendValueToNext(Boolean input)
         {
             foreach (BasicNode node in Next)

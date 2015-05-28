@@ -12,6 +12,7 @@ namespace CircuitSimulater.Model
         {
             CircuitFactory.Register("AND", typeof(And));
         }
+
         public override void SendValueToNext(Boolean input)
         {
             if (this.input == null)
@@ -30,13 +31,6 @@ namespace CircuitSimulater.Model
                     node.SendValueToNext(result);
                 }              
             }
-         
-
         }
-
-     
-      
-       
-
     }
 }

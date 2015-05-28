@@ -12,16 +12,10 @@ namespace CircuitSimulater.Model
         {
             CircuitFactory.Register("OUTPUT", typeof(Output));
         }
-        private String name;
-
-        public String GetName()
-        {
-            return this.name;
-        }
 
         public override void SendValueToNext(Boolean input)
         {
-          Console.WriteLine(input);
+          Console.WriteLine(this.name + ": " + input);
         }
       
     }

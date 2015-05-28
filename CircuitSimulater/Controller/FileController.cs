@@ -22,12 +22,11 @@ namespace CircuitSimulater
         private void ReadFile()
         {
             lines = System.IO.File.ReadAllLines(@filePath);
-            Console.Write(lines);
         }
 
         private void MakeObjects()
         {
-            Dictionary<string, string[]> nodes = new Dictionary<string, string[]>();
+            Dictionary<string, string> nodes = new Dictionary<string, string>();
             Dictionary<string, string[]> edges = new Dictionary<string, string[]>();
 
             foreach (string line in lines)
@@ -54,12 +53,12 @@ namespace CircuitSimulater
                         }
                         else
                         {
-                            nodes.Add(name, arrDescription);
+                            nodes.Add(name, arrDescription[0]);
                         }
                     }
                 }
             }
-
+            new Simulation(nodes, edges);
         }
     }
 }

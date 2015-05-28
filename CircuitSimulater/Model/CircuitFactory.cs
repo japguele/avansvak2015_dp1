@@ -8,13 +8,13 @@ namespace CircuitSimulater.Model
 {
     class CircuitFactory
     {
-        private static Dictionary<string, Type> circuits =
-        new Dictionary<string, Type>();
+        private static Dictionary<string, Type> circuits = new Dictionary<string, Type>();
 
         public static void Register(String key, Type c)
         {
             circuits.Add(key, c);
         }
+
         public static BasicNode CreateNode(String key)
         {
             Type type = null;
@@ -25,7 +25,5 @@ namespace CircuitSimulater.Model
 
             return null;
         }
-        
-       
     }
 }
