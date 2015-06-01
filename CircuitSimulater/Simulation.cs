@@ -60,8 +60,9 @@ namespace CircuitSimulater
 
             foreach (var input in inputNodes)
             {
+                
                 if (input.Value == "INPUT_HIGH")
-                {
+                {                 
                     input.Key.SendValueToNext(true);
                 }
                 else if (input.Value == "INPUT_LOW")

@@ -15,12 +15,14 @@ namespace CircuitSimulater.Model
 
         public override void SendValueToNext(Boolean input)
         {
+            //Console.WriteLine("and gate");
             if (this.input == null)
             {
                 this.input = input;
             }
             else
             {
+                
                 Boolean result = false;
                 if (this.input == true && input)
                 {

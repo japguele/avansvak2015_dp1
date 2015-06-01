@@ -21,13 +21,16 @@ namespace CircuitSimulater.Model
             }
             else
             {
-                if (this.input == true || input )
+                Boolean result = false;
+                if (this.input == true || input)
                 {
-                    foreach (BasicNode node in Next)
-                    {
-                        node.SendValueToNext(input);
-                    }
+                  result = true;
                 }
+                foreach (BasicNode node in Next)
+                {
+                    node.SendValueToNext(result);
+                }
+                
             }
         }
     }
