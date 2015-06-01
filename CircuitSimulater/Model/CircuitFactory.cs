@@ -16,7 +16,7 @@ namespace CircuitSimulater.Model
         }
 
         public static BasicNode CreateNode(String key)
-        {
+        { 
             Type type = null;
             if (circuits.TryGetValue(key, out type))
             {
