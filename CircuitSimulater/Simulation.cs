@@ -11,6 +11,8 @@ namespace CircuitSimulater
     {
         public Simulation(Dictionary<string, string> nodes, Dictionary<string, string[]> edges)
         {
+            Mediator currentMediator = Mediator.getInstance();
+
             Dictionary<string, BasicNode> nodeObjects = new Dictionary<string, BasicNode>();
             Dictionary<BasicNode, string> inputNodes = new Dictionary<BasicNode, string>();
 
@@ -51,23 +53,26 @@ namespace CircuitSimulater
 
                 if (node != null)
                 {
+                    List<BasicNode> nextNodes = new List<BasicNode>();
+
                     foreach (var destinationNode in entry.Value)
                     {
-                        node.AddNext(nodeObjects[destinationNode]);
+                        nextNodes.Add(nodeObjects[destinationNode]);
                     }
+
+                    currentMediator.setDict(node, nextNodes.ToArray());
                 }
             }
 
             foreach (var input in inputNodes)
             {
-                
                 if (input.Value == "INPUT_HIGH")
                 {                 
-                    //input.Key.SendValueToNext(true);
+                    input.Key.SetValue(true);
                 }
                 else if (input.Value == "INPUT_LOW")
                 {
-                    //input.Key.SendValueToNext(false);
+                    input.Key.SetValue(false);
                 }
             }
         }

@@ -15,7 +15,7 @@ namespace CircuitSimulater.Model
 
         public override void SetValue(Boolean input)
         {
-            //this.SendValue(input);
+            this.SendValue(input);
         }
     }
 }
