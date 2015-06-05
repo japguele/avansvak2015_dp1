@@ -8,6 +8,7 @@ namespace CircuitSimulater.Model
 {
     public abstract class AbstractNode
     {
-        public abstract void SendValueToNext(Boolean input);
+        public abstract void SetValue(Boolean input);
+        protected abstract void SendValue(Boolean output);
     }
 }

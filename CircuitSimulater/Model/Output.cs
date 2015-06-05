@@ -13,7 +13,7 @@ namespace CircuitSimulater.Model
             CircuitFactory.Register("OUTPUT", typeof(Output));
         }
 
-        public override void SendValueToNext(Boolean input)
+        public override void SetValue(Boolean input)
         {
           Console.WriteLine(this.name + ": " + input);
         }

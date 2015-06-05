@@ -13,7 +13,7 @@ namespace CircuitSimulater.Model
             CircuitFactory.Register("AND", typeof(And));
         }
 
-        public override void SendValueToNext(Boolean input)
+        public override void SetValue(Boolean input)
         {
             //Console.WriteLine("and gate");
             if (this.input == null)
@@ -28,10 +28,8 @@ namespace CircuitSimulater.Model
                 {
                     result = true;
                 }
-                foreach (BasicNode node in Next)
-                {
-                    node.SendValueToNext(result);
-                }              
+                this.SendValue(result);
+                           
             }
         }
     }

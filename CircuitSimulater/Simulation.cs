@@ -63,11 +63,11 @@ namespace CircuitSimulater
                 
                 if (input.Value == "INPUT_HIGH")
                 {                 
-                    input.Key.SendValueToNext(true);
+                    //input.Key.SendValueToNext(true);
                 }
                 else if (input.Value == "INPUT_LOW")
                 {
-                    input.Key.SendValueToNext(false);
+                    //input.Key.SendValueToNext(false);
                 }
             }
         }

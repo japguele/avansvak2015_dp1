@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace CircuitSimulater.Model
 {
-    class Input : TwoInputNode
+    class Input : BasicNode
     {
         public static void Register()
         {
             CircuitFactory.Register("INPUT", typeof(Input));
         }
 
-        public override void SendValueToNext(Boolean input)
+        public override void SetValue(Boolean input)
         {
-            foreach (BasicNode node in Next)
-            {
-                node.SendValueToNext(input);
-            }
+            //this.SendValue(input);
         }
     }
 }

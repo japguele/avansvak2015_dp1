@@ -9,15 +9,15 @@ namespace CircuitSimulater.Model
     class BasicNode : AbstractNode
     {
         public string name { get; set; }
-        protected List<BasicNode> Next = new List<BasicNode>();
 
-        public void AddNext(BasicNode Next)
+        protected override void SendValue(bool output)
         {
-            this.Next.Add(Next);
+            Mediator.getInstance().sendToNext(output, this);
         }
-
-        public override void SendValueToNext(Boolean input)
+        public override void SetValue(bool input)
         {
-        }      
+            throw new NotImplementedException();
+        }
+        
     }
 }
