@@ -1,4 +1,4 @@
-﻿namespace CircuitSimulater
+﻿namespace CircuitSimulator
 {
     partial class MainWindow
     {

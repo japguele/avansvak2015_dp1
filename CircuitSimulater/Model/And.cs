@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater.Model
+namespace CircuitSimulator.Model
 {
-    class And : TwoInputNode 
+    public class And : TwoInputNode 
     {
         public static void Register()
         {
@@ -15,21 +15,18 @@ namespace CircuitSimulater.Model
 
         public override void SetValue(Boolean input)
         {
-            //Console.WriteLine("and gate");
             if (this.input == null)
             {
                 this.input = input;
             }
             else
             {
-                
                 Boolean result = false;
                 if (this.input == true && input)
                 {
                     result = true;
                 }
                 this.SendValue(result);
-                           
             }
         }
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater.Model
+namespace CircuitSimulator.Model
 {
     public abstract class AbstractNode
     {

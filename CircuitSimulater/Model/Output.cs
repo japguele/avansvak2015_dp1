@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater.Model
+namespace CircuitSimulator.Model
 {
-    class Output : BasicNode
+    public class Output : BasicNode
     {
         public static void Register()
         {
@@ -15,7 +15,9 @@ namespace CircuitSimulater.Model
 
         public override void SetValue(Boolean input)
         {
-          Console.WriteLine(this.name + ": " + input);
+            outputValue = input;
+
+            Console.WriteLine(this.name + ": " + input);
         }
       
     }

@@ -1,13 +1,13 @@
-﻿using CircuitSimulater.Model;
+﻿using CircuitSimulator.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater
+namespace CircuitSimulator
 {
-    class Simulation
+    public class Simulation
     {
         public Simulation(Dictionary<string, string> nodes, Dictionary<string, string[]> edges)
         {

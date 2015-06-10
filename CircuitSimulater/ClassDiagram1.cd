@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CircuitSimulator.FileController" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAIAAEAAAAAAABAAAAA=</HashCode>
+      <FileName>Controller\FileController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.MainWindow" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAQAACAAAIAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Program" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Simulation" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Simulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.AbstractNode" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\AbstractNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.And" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\And.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.BasicNode" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAEAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\BasicNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.CircuitFactory" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\CircuitFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.Input" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Input.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.Mediator" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAEAAAAAAAAAAAAAABAAAQAAAAAAAggAAA=</HashCode>
+      <FileName>Model\Mediator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.Not" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Not.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.Or" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Or.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.Output" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Output.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.TwoInputNode" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\TwoInputNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Properties.Resources" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Properties.Settings" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

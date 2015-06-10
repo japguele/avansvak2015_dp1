@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater.Model
+namespace CircuitSimulator.Model
 {
-    class Not : BasicNode
+    public class Not : BasicNode
     {
         public static void Register()
         {

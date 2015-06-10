@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater.Model
+namespace CircuitSimulator.Model
 {
-    class Or : TwoInputNode
+    public class Or : TwoInputNode
     {
         public static void Register()
         {
@@ -24,10 +24,9 @@ namespace CircuitSimulater.Model
                 Boolean result = false;
                 if (this.input == true || input)
                 {
-                  result = true;
+                    result = true;
                 }
                 this.SendValue(result);
-                
             }
         }
     }

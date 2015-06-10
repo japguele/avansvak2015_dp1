@@ -5,9 +5,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater
+namespace CircuitSimulator
 {
-    class FileController
+    public class FileController
     {
         private string filePath { get; set; }
         private string[] lines { get; set; }

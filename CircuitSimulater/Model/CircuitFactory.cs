@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater.Model
+namespace CircuitSimulator.Model
 {
-    class CircuitFactory
+    public class CircuitFactory
     {
         private static Dictionary<string, Type> circuits = new Dictionary<string, Type>();
 

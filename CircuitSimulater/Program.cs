@@ -1,13 +1,11 @@
-﻿using CircuitSimulater.Model;
+﻿using CircuitSimulator.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-
-namespace CircuitSimulater
+namespace CircuitSimulator
 {
     static class Program
     {
