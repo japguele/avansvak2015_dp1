@@ -57,13 +57,16 @@
     <Compile Include="Model\CircuitFactory.cs" />
     <Compile Include="Model\Input.cs" />
     <Compile Include="Model\Mediator.cs" />
+    <Compile Include="Model\Nand.cs" />
+    <Compile Include="Model\Nor.cs" />
     <Compile Include="Model\Not.cs" />
     <Compile Include="Model\Or.cs" />
     <Compile Include="Model\Output.cs" />
     <Compile Include="Model\TwoInputNode.cs" />
+    <Compile Include="Model\Xor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Simulation.cs" />
+    <Compile Include="Controller\Simulation.cs" />
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>

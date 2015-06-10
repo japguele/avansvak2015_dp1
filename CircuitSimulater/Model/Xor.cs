@@ -1,21 +1,22 @@
-﻿using System;
+﻿using CircuitSimulator.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater.Model
+namespace CircuitSimulator.Model
 {
-    class Xor : TwoInputNode
+    public class Xor : TwoInputNode
     {
         public static void Register()
         {
-            CircuitFactory.Register("OUTPUT", typeof(Output));
+            CircuitFactory.Register("XOR", typeof(Xor));
         }
 
         public override void SetValue(Boolean input)
         {
-             if (this.input == null)
+            if (this.input == null)
             {
                 this.input = input;
             }
@@ -27,7 +28,6 @@ namespace CircuitSimulater.Model
                     result = false;
                 }
                 this.SendValue(result);
-
             }
         }
     }

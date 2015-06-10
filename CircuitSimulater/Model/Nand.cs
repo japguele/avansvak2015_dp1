@@ -1,16 +1,17 @@
-﻿using System;
+﻿using CircuitSimulator.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater.Model
+namespace CircuitSimulator.Model
 {
-    class Nand : TwoInputNode
+    public class Nand : TwoInputNode
     {
         public static void Register()
         {
-            CircuitFactory.Register("Nand", typeof(Nand));
+            CircuitFactory.Register("NAND", typeof(Nand));
         }
 
         public override void SetValue(Boolean input)

@@ -20,6 +20,9 @@ namespace CircuitSimulator
             Not.Register();
             Or.Register();
             Output.Register();
+            Xor.Register();
+            Nand.Register();
+            Nor.Register();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

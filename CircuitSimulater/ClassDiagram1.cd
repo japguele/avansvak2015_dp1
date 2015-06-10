@@ -25,7 +25,7 @@
     <Position X="13.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Simulation.cs</FileName>
+      <FileName>Controller\Simulation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CircuitSimulator.Model.AbstractNode" Collapsed="true">
@@ -45,7 +45,7 @@
   <Class Name="CircuitSimulator.Model.BasicNode" Collapsed="true">
     <Position X="5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAEAAgAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAEAAgABAAAAAAAAAA=</HashCode>
       <FileName>Model\BasicNode.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -108,6 +108,27 @@
     <Position X="12" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.Nand" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Nand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.Nor" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Nor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Model.Xor" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Xor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

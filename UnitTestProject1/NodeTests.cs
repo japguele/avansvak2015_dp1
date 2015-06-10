@@ -17,6 +17,9 @@ namespace UnitTestProject
             Not.Register();
             Or.Register();
             Output.Register();
+            Xor.Register();
+            Nand.Register();
+            Nor.Register();
         }
 
         [TestMethod]
@@ -47,6 +50,33 @@ namespace UnitTestProject
         }
 
         [TestMethod]
+        public void TestNandNode()
+        {
+            Mediator currentMediator = Mediator.getInstance();
+
+            var inputNode1 = CircuitFactory.CreateNode("INPUT");
+            inputNode1.name = "IN1";
+
+            var inputNode2 = CircuitFactory.CreateNode("INPUT");
+            inputNode2.name = "IN2";
+
+            var nandNode = CircuitFactory.CreateNode("NAND");
+            nandNode.name = "NANDNODE";
+
+            var outputNode = CircuitFactory.CreateNode("OUTPUT");
+            outputNode.name = "Out";
+
+            currentMediator.setDict(inputNode1, new BasicNode[] { nandNode });
+            currentMediator.setDict(inputNode2, new BasicNode[] { nandNode });
+            currentMediator.setDict(nandNode, new BasicNode[] { outputNode });
+
+            inputNode1.SetValue(false);
+            inputNode2.SetValue(false);
+
+            Assert.AreEqual(outputNode.outputValue, true);
+        }
+
+        [TestMethod]
         public void TestOrNode()
         {
             Mediator currentMediator = Mediator.getInstance();
@@ -71,6 +101,60 @@ namespace UnitTestProject
             inputNode2.SetValue(false);
 
             Assert.AreEqual(outputNode.outputValue, true);
+        }
+
+        [TestMethod]
+        public void TestXorNode()
+        {
+            Mediator currentMediator = Mediator.getInstance();
+
+            var inputNode1 = CircuitFactory.CreateNode("INPUT");
+            inputNode1.name = "IN1";
+
+            var inputNode2 = CircuitFactory.CreateNode("INPUT");
+            inputNode2.name = "IN2";
+
+            var xorNode = CircuitFactory.CreateNode("XOR");
+            xorNode.name = "XORNODE";
+
+            var outputNode = CircuitFactory.CreateNode("OUTPUT");
+            outputNode.name = "Out";
+
+            currentMediator.setDict(inputNode1, new BasicNode[] { xorNode });
+            currentMediator.setDict(inputNode2, new BasicNode[] { xorNode });
+            currentMediator.setDict(xorNode, new BasicNode[] { outputNode });
+
+            inputNode1.SetValue(true);
+            inputNode2.SetValue(true);
+
+            Assert.AreEqual(outputNode.outputValue, false);
+        }
+
+        [TestMethod]
+        public void TestNorNode()
+        {
+            Mediator currentMediator = Mediator.getInstance();
+
+            var inputNode1 = CircuitFactory.CreateNode("INPUT");
+            inputNode1.name = "IN1";
+
+            var inputNode2 = CircuitFactory.CreateNode("INPUT");
+            inputNode2.name = "IN2";
+
+            var norNode = CircuitFactory.CreateNode("NOR");
+            norNode.name = "NORNODE";
+
+            var outputNode = CircuitFactory.CreateNode("OUTPUT");
+            outputNode.name = "Out";
+
+            currentMediator.setDict(inputNode1, new BasicNode[] { norNode });
+            currentMediator.setDict(inputNode2, new BasicNode[] { norNode });
+            currentMediator.setDict(norNode, new BasicNode[] { outputNode });
+
+            inputNode1.SetValue(false);
+            inputNode2.SetValue(true);
+
+            Assert.AreEqual(outputNode.outputValue, false);
         }
 
         [TestMethod]

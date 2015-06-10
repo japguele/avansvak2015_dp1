@@ -1,16 +1,17 @@
-﻿using System;
+﻿using CircuitSimulator.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CircuitSimulater.Model
+namespace CircuitSimulator.Model
 {
-    class Nor : TwoInputNode
+    public class Nor : TwoInputNode
     {
         public static void Register()
         {
-            CircuitFactory.Register("Nor", typeof(Nor));
+            CircuitFactory.Register("NOR", typeof(Nor));
         }
 
         public override void SetValue(Boolean input)
